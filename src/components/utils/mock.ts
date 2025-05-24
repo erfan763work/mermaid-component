@@ -1,6 +1,3 @@
-// src/api/mockMermaidApi.js
-
-// Simulate network delay
 const simulateDelay = () =>
   new Promise((resolve) => setTimeout(resolve, 300 + Math.random() * 700));
 

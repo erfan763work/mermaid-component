@@ -1,4 +1,4 @@
-# Stage 1: Build the Vue 3 application
+# Stage 1: Build the React application
 FROM node:20-alpine AS build-stage
 WORKDIR /app
 COPY package*.json ./
@@ -11,6 +11,6 @@ RUN npm run build
 FROM nginx:stable-alpine
 RUN apk add tzdata
 ENV TZ="Asia/Tehran"
-COPY  --from=build-stage /app/dist /usr/share/nginx/html
+COPY --from=build-stage /app/build /usr/share/nginx/html  
 COPY ./configs/nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
