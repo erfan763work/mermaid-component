@@ -1,1 +1,1 @@
-export * from './useMockMermaidText';
+export * from './useMermaidDiagrams';

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box, CircularProgress, Typography } from '@mui/material';
-import { LoadingSpinnerProps } from './type';
+import type { TLoadingSpinnerProps } from './type';
 
-const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({
+const LoadingSpinner: React.FC<TLoadingSpinnerProps> = ({
   size = 40,
   thickness = 4,
   message = 'Loading...',

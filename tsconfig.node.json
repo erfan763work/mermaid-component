@@ -11,7 +11,6 @@
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
-    "noEmit": true,
 
     /* Linting */
     "strict": true,
@@ -19,7 +18,14 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    "composite": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationMap": true
   },
   "include": ["vite.config.ts"]
 }

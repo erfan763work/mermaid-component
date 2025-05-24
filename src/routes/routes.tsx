@@ -3,7 +3,7 @@ import { createBrowserRouter, Navigate, RouteObject } from 'react-router-dom';
 import ErrorPage from 'src/pages/Error';
 
 const LazyNotFoundPage = lazy(() => import('src/pages/NotFound'));
-const LazyHomePage = lazy(() => import('src/pages/Home'));
+const LazyHomePage = lazy(() => import('src/pages/Home/Home'));
 
 const AppRouter = () => {
   const routes: RouteObject[] = [
