@@ -14,7 +14,6 @@ This project is a React application built with TypeScript that displays Mermaid 
   - TypeScript for type safety
   - React Query for server state management
   - Material-UI (MUI) for responsive UI components
-  - Axios for HTTP requests
 - **Code Quality Tools**:
   - Prettier for code formatting
   - ESLint for code linting
@@ -33,3 +32,4 @@ cd [project-directory]
 npm install
 # or
 yarn install
+```
